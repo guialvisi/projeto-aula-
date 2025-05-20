@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando a DOM com Js</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+    <h1>Manipulando a DOM com Js</h1>
+
+    <section>
+        <h2>Exemplo 1: Alterar Texto</h2>
+        <h3 id="titulo">Olá mundo!</h3>
+        <button onclick="mudarTexto()">Mudar texto</button>
+    </section>
+
+    <section>
+        <h2>Exemplo 2: Alterar Estilo</h2>
+        <p id="paragrafo">Clique no botão para mudar cor e texto</p>
+        <button onclick="mudarCor()">Mudar Cor</button>
+    </section>
+
+    <section>
+        <h2>Exemplo 3: Adicionar Item</h2>
+        <button onclick="adicionarItem()">Adicionar Item</button>
+        <ul id="lista"></ul>
+    </section>
+
+    <section>
+        <h2>Exemplo 4: Remover Ultimo Item</h2>
+        <ul id="lista2">
+            <li>Item A</li>
+            <li>Item B</li>   
+        </ul>
+        <button onclick="removerUltimoItem()">Remover Ultimo Item</button>
+    </section>
+
+    <section>
+                <h2>Exemplo 5: Evento Visuais</h2>
+                <p>Passe o mouse na caixa abaixo</p>
+                <div id="caixa" class="caixa" onmouseover="destacar()"onmouseout="removerDestaque()"></div>
+    </section>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+
+
+
+
+    
+ </body>
+ </html>
